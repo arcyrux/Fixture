@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hView">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context="com.jpm.fixture.Fixture"
+            android:id="@+id/linear"
+            android:background="#444444">
+            <!--android:background="#44aa77"-->
+            <!--android:background="@drawable/border_style"-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_posicion"
+                android:id="@+id/textPOS"
+                android:width="35dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="@dimen/z_text_size_fixture" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/boton_partidos"
+                android:id="@+id/button"
+                android:width="200dp"
+                android:textSize="@dimen/z_text_size_fixture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_puntos"
+                android:id="@+id/textPTS"
+                android:width="35dp"
+                android:textSize="@dimen/z_text_size_fixture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_jugados"
+                android:id="@+id/textPJ"
+                android:width="35dp"
+                android:textSize="@dimen/z_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_ganados"
+                android:id="@+id/textPG"
+                android:width="35dp"
+                android:textSize="@dimen/z_text_size_fixture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_empatados"
+                android:id="@+id/textPE"
+                android:width="35dp"
+                android:textSize="@dimen/z_text_size_fixture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_perdidos"
+                android:id="@+id/textPP"
+                android:width="35dp"
+                android:textSize="@dimen/z_text_size_fixture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_favor"
+                android:id="@+id/textGF"
+                android:width="35dp"
+                android:textSize="@dimen/z_text_size_fixture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_contra"
+                android:id="@+id/textGC"
+                android:width="35dp"
+                android:textSize="@dimen/z_text_size_fixture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_diferencia"
+                android:id="@+id/textDIF"
+                android:width="35dp"
+                android:textSize="@dimen/z_text_size_fixture" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scroller">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parent">
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</HorizontalScrollView>

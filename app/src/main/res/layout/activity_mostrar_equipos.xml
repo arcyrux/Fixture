@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/caps_jugadores"
+            android:textSize="@dimen/z_text_size_partido"
+            android:id="@+id/textView5"
+            android:layout_gravity="center" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mostrarEquipo"
+            android:background="#ededed">
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/volver"
+            android:id="@+id/volver"
+            android:onClick="volver"
+            android:textSize="@dimen/z_text_size_fixture"
+            android:background="#666666" />
+    </LinearLayout>
+</ScrollView>

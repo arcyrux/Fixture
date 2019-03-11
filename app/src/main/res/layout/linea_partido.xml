@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.jpm.fixture.MostrarPartidos">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/view_local"
+        android:id="@+id/nomLocal"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textSize="@dimen/z_text_size_partido" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/golLocal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="@dimen/z_text_size_partido"
+        android:singleLine="true"
+        android:maxLength="3"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/golVisita"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="@dimen/z_text_size_partido"
+        android:singleLine="true"
+        android:maxLength="3"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/view_visitante"
+        android:id="@+id/nomVisita"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textSize="@dimen/z_text_size_partido" />
+</LinearLayout>

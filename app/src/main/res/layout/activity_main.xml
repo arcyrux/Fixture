@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jugadores"
+        android:layout_marginTop="@dimen/z_menu_vertical_margin"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/z_text_size" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/jugadores"
+        android:layout_marginTop="@dimen/z_menu_vertical_margin"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:textSize="@dimen/z_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equipos"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/jugadores"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/z_menu_vertical_margin"
+        android:textSize="@dimen/z_text_size" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/equipos"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/z_menu_vertical_margin"
+        android:textSize="@dimen/z_text_size" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vuelta"
+        android:id="@+id/vuelta"
+        android:checked="false"
+        android:layout_below="@+id/equipos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/z_menu_vertical_margin"
+        android:textSize="@dimen/z_text_size" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guardado"
+        android:id="@+id/continuar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/z_menu_horizontal_margin"
+        android:layout_marginBottom="@dimen/z_menu_vertical_margin"
+        android:onClick="continuar"
+        android:textSize="@dimen/z_text_size" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seguir"
+        android:id="@+id/seguir"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/z_menu_horizontal_margin"
+        android:layout_marginBottom="@dimen/z_menu_vertical_margin"
+        android:onClick="seguir"
+        android:textSize="@dimen/z_text_size" />
+
+</RelativeLayout>
